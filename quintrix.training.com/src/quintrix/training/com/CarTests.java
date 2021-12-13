@@ -1,8 +1,7 @@
 package quintrix.training.com;
 
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import com.sun.tools.javac.util.Assert;
+import org.junit.Assert;
+import org.junit.Test;
 
 class CarTests {
 	
@@ -14,20 +13,7 @@ class CarTests {
 		//act
 		Corvette.start();
 		
-		//assert
-		AssertJUnit.assertEquals(Corvette.start(), "Engine Started");
+		//assert		
+		Assert.assertNotNull(Corvette);
 	}
-	
-	@Test
-	public void isCarStarted() {
-		//arrange
-		Car Corvette = new Car("Corvette");
-		
-		//act
-		Corvette.start();
-		
-		//assert
-		Assert.assertEquals(Corvette.start(), "Engine Started");
-	}
-
 }
