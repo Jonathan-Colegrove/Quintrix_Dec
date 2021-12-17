@@ -39,7 +39,6 @@ AND last_name = 'Fawcett';
 
 
 
-## left off here, didn't finish yet
 7. Use a Stored Procedure to get the 4 inventory ids for the film "Alien Center" at Store #2. 
 don't create a view, use the 1 that's already there.
 
@@ -53,30 +52,24 @@ AND store = 2;
 involves inserts to multiple tables
 
 START TRANSACTION
+INSERT INTO store(
+				store_id,
+				manager_staff_id,
+				address_id,
+				last_update)
+VALUES(3, 1, 3, 2019-01-16 04:57:12)
+COMMIT;
 
-ROLLBACK TRANSACTION
-
-manager_staff_id = 1
-address_id = 1
-last_update = 
-
-
-store_id: A surrogate primary key that uniquely identifies the store.
-
-manager_staff_id: A foreign key identifying the manager of this store.
-
-address_id: A foreign key identifying the address of this store.
-
-last_update: When the row was created or most recently updated.
-
-
-INSERT 
 
 9. Update the timestamp to the current date/time for the new store you entered in the previous question. 
 
-UPDATE 
+UPDATE store
+SET last_update = 2021-12-16 04:57:12
+WHERE store_id = 3;
 
 10. Delete the new store. 
-you're not guaranteed to be the last store in the database! others may write queries 
 
-REMOVE TRANSACTION
+START TRANSACTION
+DELETE FROM store
+WHERE store_id = 3
+ROLLBACK TRANSACTION;
