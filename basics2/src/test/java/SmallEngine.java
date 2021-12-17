@@ -1,7 +1,7 @@
-public class LargeEngine implements IEngine {
+public class SmallEngine implements IEngine {
 
 	// does this work?
-	public int cylinderCount = 8;
+	public int cylinderCount = 4;
 	
 	public void Start() {
 		System.out.println("Engine Started");

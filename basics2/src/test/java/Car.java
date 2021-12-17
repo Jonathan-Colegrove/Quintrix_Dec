@@ -1,4 +1,4 @@
-public class Car {
+public class Car extends Vehicle {
 	
 	private int odometer;
 	public String model;
@@ -8,7 +8,9 @@ public class Car {
 		engine = new LargeEngine();
 	}
 	
+	// ok?
 	public void drive(int distance) {
+		this.odometer += distance;
 	}
 	
 	public void start() {
