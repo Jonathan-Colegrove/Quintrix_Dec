@@ -67,6 +67,7 @@ UPDATE store
 SET last_update = 2021-12-16 04:57:12
 WHERE store_id = 3;
 
+
 10. Delete the new store. 
 
 START TRANSACTION
