@@ -8,7 +8,6 @@ public class Car extends Vehicle {
 		engine = new LargeEngine();
 	}
 	
-	// ok?
 	public void drive(int distance) {
 		this.odometer += distance;
 	}
@@ -18,6 +17,10 @@ public class Car extends Vehicle {
 
 	public int getOdometer() {
 		return odometer;
+	}
+	
+	public int getCylinderCount() {
+		return 8;
 	}
 
 }

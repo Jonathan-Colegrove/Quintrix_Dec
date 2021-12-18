@@ -1,9 +1,8 @@
 public class SmallEngine implements IEngine {
 
-	// does this work?
 	public int cylinderCount = 4;
 	
-	public void Start() {
+	public void start() {
 		System.out.println("Engine Started");
 	}
 

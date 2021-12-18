@@ -2,5 +2,5 @@ public interface IEngine {
 	
 	public int getCylinderCount();
 	
-	public void Start();
+	public void start();
 }
