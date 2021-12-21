@@ -1,0 +1,19 @@
+// BUG 3
+
+Google Plus No Longer Exists
+
+// Description
+Google Plus is discontinued, therefore links to it should be removed.
+
+// How to Reproduce
+Click on the Google Plus icon.
+
+// Environment
+Google Chrome browser version 96.0.4664.110 (64-bit)
+Windows 10
+
+// Expected Results
+Users expect to see the site's Google Plus page.  If the site hasn't updated their link to Google Plus, which was discontinued years ago, it makes users wonder if other things, like security updates, are also years behind.
+
+// Severity
+Medium

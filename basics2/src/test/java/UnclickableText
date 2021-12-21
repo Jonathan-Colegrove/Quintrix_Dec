@@ -1,0 +1,20 @@
+// BUG 2
+
+Cursor over 'Follow Us' Makes User Think it is Clickable
+
+// Description
+Hovering over 'Follow Us' changes the cursor to a hand, indicating the text is clickable just like how the cursor changes when it is over the Facebook, etc icons.  However, the text is an <h4> tag and clicking does absolutely nothing.
+
+// How to Reproduce
+Click on the 'Follow Us' text.
+Please see the screenshot.
+
+// Environment
+Google Chrome browser version 96.0.4664.110 (64-bit)
+Windows 10
+
+// Expected Results
+Since there are buttons to the right of the 'Follow Us' text, users would not assume to click on the text.  However, once the cursor changes, users would assume it is clickable and would open a new page.
+
+// Severity
+Low
