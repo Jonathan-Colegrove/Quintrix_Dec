@@ -1,0 +1,19 @@
+// BUG 4
+
+Send To A Friend Does Not Email
+
+// Description
+The 'Send to a friend' button acts as if it will email a person information about the selected item, however no email is sent.
+
+// How to Reproduce
+Click the 'Send to a Friend' button, fill in the friend's name & email, click 'send'.
+
+// Environment
+Google Chrome browser version 96.0.4664.110 (64-bit)
+Windows 10
+
+// Expected Results
+Users expect to have an email sent, especially since a confirmation box pops up notifying that an email was sent.
+
+// Severity
+High
