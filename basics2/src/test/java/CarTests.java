@@ -34,12 +34,13 @@ public class CarTests {
 		Convertible Whisp = new Convertible("Whisp");
 
 		//act
+		int smallEngineCylinderCount = 4;
 		Whisp.start();
 		Whisp.drive(100);
 		int whispCylinderCount = Whisp.getCylinderCount();
 
 		//assert		
-		Assert.assertEquals(whispCylinderCount, 4);
+		Assert.assertEquals(whispCylinderCount, smallEngineCylinderCount);
 	}
 
 	@Test
@@ -48,13 +49,15 @@ public class CarTests {
 		Car BeastMaster = new Car("BeastMaster");
 
 		//act
+		int distanceDriven = 100;
+		int largeEngineCylinderCount = 8;
 		BeastMaster.start();
-		BeastMaster.drive(100);
+		BeastMaster.drive(distanceDriven);
 
 		int BeastMasterCylinderCount = BeastMaster.getCylinderCount();
 
 		//assert		
-		Assert.assertEquals(BeastMasterCylinderCount, 8);
+		Assert.assertEquals(BeastMasterCylinderCount, largeEngineCylinderCount);
 	}
 
 	@Test
