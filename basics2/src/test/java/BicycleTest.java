@@ -10,7 +10,8 @@ public class BicycleTest {
 		Bicycle bike = new Bicycle();
 
 		// act
-		bike.drive(12);
+		int distance = 12;
+		bike.drive(distance);
 
 		// assert
 		Assert.assertEquals(bike.getOdometer(), 12);
