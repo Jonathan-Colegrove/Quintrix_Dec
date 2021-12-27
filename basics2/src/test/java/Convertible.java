@@ -12,7 +12,14 @@ public class Convertible extends Car {
 		return 4;
 	}
 	
-//	public String roofStatus() {
-//		roofRaised == true ? "Roof is up" : "Roof is down";
-//	}
+	public String roofStatus(boolean roofRaised) {
+		String roofStatus;
+		if (roofRaised = true) {
+			roofStatus = "Roof is up";
+		} else {
+			roofStatus = "Roof is down";
+			}
+		return roofStatus;
+	}
+	
 }

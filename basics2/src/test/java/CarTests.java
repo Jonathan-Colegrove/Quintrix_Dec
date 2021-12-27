@@ -71,4 +71,18 @@ public class CarTests {
 		//assert		
 		Assert.assertNotNull(Saturn);
 	}
+	
+	@Test
+	public void canRaiseRoof() {
+		//arrange
+		Convertible Saturn = new Convertible("Saturn");
+
+		//act
+		Saturn.start();
+		boolean roofRaised = true;
+		String up = Saturn.roofStatus(roofRaised);
+		
+		//assert		
+		Assert.assertEquals("Roof is up", up);
+	}
 }
