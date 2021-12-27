@@ -1,0 +1,24 @@
+// BUG 1
+
+Error with Feature-Policy Header
+
+// Description
+
+// How to Reproduce
+When clicking 'Shop Now' on the gallery slider of the homepage, the error 'Error with Feature-Policy header: Unrecognized feature: 'ambient-light-sensor'." appears.
+Please also see the screenshot.
+
+// Environment
+Windows 10
+
+Google Chrome browser version 96.0.4664.110 (64-bit)
+
+CookiesBlock chrome browser extension v0.10.0
+https://chrome.google.com/webstore/detail/ajkknbgennjgacpfbhdobipfhhikbldg
+
+// Expected Results
+When clicking 'Shop Now', users expect to be directed to a page to view products.
+Users also expect features like ambient-light-sensor to be supported, though it does not impact users' ability to use this site.
+
+// Severity
+Low
