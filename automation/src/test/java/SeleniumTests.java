@@ -1,6 +1,6 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -8,16 +8,16 @@ import org.testng.annotations.Test;
 
 public class SeleniumTests {
 	
-	private EdgeDriver driver;
+	private ChromeDriver driver;
 	private final String url = "https://www.selenium.dev/";
 
 	@BeforeMethod
 	public void setup() {
 
-		String driverpath = "C:\\\\temp\\msedgedriver.exe";
-		System.setProperty("webdriver.edge.driver", driverpath);
+		String driverpath = "C:\\Users\\Jonathan\\Desktop\\Quintrix\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", driverpath);
 
-		this.driver = new EdgeDriver();
+		this.driver = new ChromeDriver();
 
 		this.driver.navigate().to(url);
 	}
