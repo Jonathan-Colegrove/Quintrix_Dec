@@ -1,4 +1,4 @@
-public class Car {
+public class Car extends Vehicle {
 	
 	private int odometer;
 	public String model;
@@ -9,6 +9,7 @@ public class Car {
 	}
 	
 	public void drive(int distance) {
+		this.odometer += distance;
 	}
 	
 	public void start() {
@@ -16,6 +17,10 @@ public class Car {
 
 	public int getOdometer() {
 		return odometer;
+	}
+	
+	public int getCylinderCount() {
+		return 8;
 	}
 
 }
