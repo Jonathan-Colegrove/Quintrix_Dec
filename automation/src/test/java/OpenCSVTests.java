@@ -14,7 +14,9 @@ import org.testng.annotations.Test;
 
 public class OpenCSVTests { 
 
-//  tests I'm adding now
+	final String SOURCE = "src/test/resources/config.properties";
+	
+	
 //  A. ensure that you can get the 'browserType' value from the config file
   
   @Test
@@ -25,7 +27,7 @@ public class OpenCSVTests {
 	  
 	  Reader reader = null;
 	try {
-		reader = new FileReader("src/test/resources/config.properties");
+		reader = new FileReader(SOURCE);
 	} catch (FileNotFoundException e1) {
 		e1.printStackTrace();
 	}
@@ -70,7 +72,7 @@ public class OpenCSVTests {
 	  		
 	  		Reader reader = null;
 			try {
-				reader = new FileReader("src/test/resources/basses.csv");
+				reader = new FileReader(SOURCE);
 			} catch (FileNotFoundException e1) {
 				e1.printStackTrace();
 			}
@@ -111,7 +113,7 @@ public class OpenCSVTests {
 	  
 	  Reader reader = null;
 	try {
-		reader = new FileReader("src/test/resources/config.properties");
+		reader = new FileReader(SOURCE);
 	} catch (FileNotFoundException e3) {
 		e3.printStackTrace();
 	}
@@ -146,7 +148,7 @@ public class OpenCSVTests {
 	  
 	  OutputStream outputStream = null;
 		try {
-			outputStream = new BufferedOutputStream(new FileOutputStream("src/test/resources/OutputTest.csv"));
+			outputStream = new BufferedOutputStream(new FileOutputStream(SOURCE));
 		} catch (FileNotFoundException e1) {
 			e1.printStackTrace();
 		}
