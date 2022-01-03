@@ -1,6 +1,8 @@
 import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.opencsv.CSVReader;
 
@@ -9,6 +11,8 @@ public class OpenCSVTests {
 	final String BASSES = "src/test/resources/basses.csv";
 	final String CONFIG = "src/test/resources/config.properties";
 
+	CSVReader reader = null;
+	
 	public String ReadMe(String file) throws Exception {
 		Reader text = Files.newBufferedReader(Paths.get(
 				ClassLoader.getSystemResource(file).toURI()));
@@ -30,9 +34,10 @@ public class OpenCSVTests {
 			e.printStackTrace();
 		}
 
-		// Assert
+		String browserType = null;
 		
-
+		// Assert
+		Assert.assertEquals(browserType , "chrome");
 	}	
 
 	//  B. Write a test which reads the basses.csv file into a HashMap of Makes & Models. Ignore string count.
@@ -41,16 +46,18 @@ public class OpenCSVTests {
 	public void canReadBassesFileIntoHashmapOfMakesAndModelsIgnoringStringCount() {
 
 		// Arrange
-
+		try {
+			ReadMe(BASSES);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 
 		// Act
 
 
 		// Assert
-
+		Assert.assertNotNull(BASSES);
 	}
-
-
 
 	//  C. Hydrate an object with CSV file data
 	//  reads the basses.csv file into a Basses Object
@@ -59,13 +66,20 @@ public class OpenCSVTests {
 	public void readsBassesFileIntoBassesObject() {
 		// Arrange
 		int expectedCount = 6;
-		
-		
 
 		// Act
-
+		
+		try {
+			ReadMe(BASSES);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 
 		// Assert
-
+		try {
+			Assert.assertEquals(expectedCount, ReadMe(BASSES).length());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 }
