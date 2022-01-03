@@ -6,11 +6,12 @@ import com.opencsv.CSVReader;
 
 public class OpenCSVTests {
 
-	final String SOURCE = "src/test/resources/config.properties";
+	final String BASSES = "src/test/resources/basses.csv";
+	final String CONFIG = "src/test/resources/config.properties";
 
-	public String ReadMe() throws Exception {
+	public String ReadMe(String file) throws Exception {
 		Reader text = Files.newBufferedReader(Paths.get(
-				ClassLoader.getSystemResource(SOURCE).toURI()));
+				ClassLoader.getSystemResource(file).toURI()));
 		return text.toString();
 	}
 
@@ -20,24 +21,19 @@ public class OpenCSVTests {
 	public void getBrowserTypeValueFromConfigFile() {
 
 		// Arrange
+		
+
+		// Act
 		try {
-			System.out.println(ReadMe().contains("BrowserType"));
+			System.out.println(ReadMe(CONFIG).contains("BrowserType"));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
-		// Act
-
-
 		// Assert
-
+		
 
 	}	
-
-
-
-
-
 
 	//  B. Write a test which reads the basses.csv file into a HashMap of Makes & Models. Ignore string count.
 
@@ -62,7 +58,9 @@ public class OpenCSVTests {
 	@Test
 	public void readsBassesFileIntoBassesObject() {
 		// Arrange
-
+		int expectedCount = 6;
+		
+		
 
 		// Act
 
