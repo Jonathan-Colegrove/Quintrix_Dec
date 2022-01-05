@@ -16,6 +16,7 @@ public class selectors {
 	@FindBy(how=How.CLASS_NAME, using="btn btn-primary")
 	private WebElement Button;
 	
+	// CSS:  footer > span
 	@FindBy(how=How.XPATH, using="Footer/Span")
 	private WebElement FooterSpan;
 	
