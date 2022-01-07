@@ -1,5 +1,6 @@
 package controlExtension;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,10 +20,8 @@ private final String URL = "https://demoqa.com/slider";
 		driver.navigate().to(URL);
 	}
 	
-//	find element!
-//	@FindBy(how=How.ID, using="")
-//	private WebElement SliderBar;
-	
+	WebElement SliderBar = driver.findElement(By.xpath("//*[@id=\\\"sliderContainer\\\"]/div[1]/span/input"));
+
 	public void setValue(String value) {
 		
 	}
