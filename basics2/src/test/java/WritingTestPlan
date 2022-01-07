@@ -1,0 +1,39 @@
+TEST PLAN
+
+Product Analysis
+automationpractice.com is a commercial website selling clothing.
+
+Test Strategy
+In order to ensure customer satisfaction, we need to test as many critical areas as possible.  It would turn away customers if things were broken, or if they did not work as expected.
+
+Test Objectives
+To test as many critical areas as possible.
+
+Test Criteria
+What Not to Test
+As we do not know the internal code for automationpractice.com, we will not be doing
+unit testing, API testing, Integration tests, install, or un-install testing.
+
+What to Test
+We will be doing a System test and Agile test.
+
+Resources
+We will use automationpractice.com and Eclipse for these tests.
+
+Test Environment
+We will test automationpractice.com in Eclipse using Java code.
+
+Schedule
+As automationpractice.com has been running for a long time without much complaint but with many people still using it, the schedule for testing the site is not as strict as for other projects.  We will begin by testing the more critical areas which people need to perform properly or expect to work a certain way.
+
+Estimates
+In order to test, we will discuss how many story points are required.  This will give us an estimate of the amount of time it will take us.
+
+Deliverables
+We will deliver the tests and the results of running them, starting with the System test and Agile test.
+
+System Test
+The system test will examine how the various parts of automationpractice.com function together.  This test will ensure the transactions requested from one part of the site will connect with the appropriate other part of the site.
+
+Agile Test
+The agile test will examine ways automationpractice.com can be run more smoothly.  It will see how things can be improved by giving results in a quicker way.
