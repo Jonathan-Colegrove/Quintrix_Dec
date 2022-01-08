@@ -2,6 +2,8 @@ package automation;
 
 import org.openqa.selenium.WebDriver;
 
+import framework.PageObjectBase;
+
 public class DocumentationPage extends PageObjectBase {
 	private WebDriver driver;
 	
