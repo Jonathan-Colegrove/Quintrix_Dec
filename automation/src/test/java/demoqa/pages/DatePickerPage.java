@@ -1,4 +1,4 @@
-package January5;
+package demoqa.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,7 +11,7 @@ public class DatePickerPage extends PageObjectBase {
 
 	private final String URL = "https://demoqa.com/date-picker";
 	
-	protected DatePickerPage(WebDriver driver) {
+	public DatePickerPage(WebDriver driver) {
 		super(driver);
 	}
 

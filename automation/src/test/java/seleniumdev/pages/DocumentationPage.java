@@ -1,4 +1,4 @@
-package automation;
+package seleniumdev.pages;
 
 import org.openqa.selenium.WebDriver;
 
