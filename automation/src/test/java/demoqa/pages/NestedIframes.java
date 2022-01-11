@@ -1,6 +1,5 @@
 package demoqa.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,9 +26,7 @@ public class NestedIframes extends PageObjectBase {
 
 	public String getText() {
 
-		driver.switchTo().frame(ParentFrame);
-		driver.switchTo().frame(ChildFrame);
+		return new NestedIframesCtrlExtn(driver, ParentFrame, ChildFrame).getText();
 
-		return driver.findElement(By.xpath("/html/body/p")).getText();
 	}
 }
