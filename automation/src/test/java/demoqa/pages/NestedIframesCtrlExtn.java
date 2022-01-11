@@ -18,8 +18,7 @@ public class NestedIframesCtrlExtn {
 
 	public String getText() {
 
-		this.driver.switchTo().frame(parentelement);
-		this.driver.switchTo().frame(childElement);
+		this.driver.switchTo().frame(parentelement).switchTo().frame(childElement);
 		return this.driver.findElement(By.xpath("/html/body/p")).getText();
 
 	}
