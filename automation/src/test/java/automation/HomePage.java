@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import framework.PageObjectBase;
+
 public class HomePage extends PageObjectBase {
 	
 	private final String homeUrl = "https://www.selenium.dev/";

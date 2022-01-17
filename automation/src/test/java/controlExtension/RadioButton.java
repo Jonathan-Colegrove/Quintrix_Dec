@@ -29,10 +29,16 @@ public class RadioButton extends PageObjectBase {
 	private WebElement No;
 	
 	public void select (String label) {
-		Yes.sendKeys(label);
+		if (label.equals("Yes")) {
+			Yes.click();
+		} else if (label.equals("Impressive")) {
+			Impressive.click();
+		} else {
+			System.out.println("Are you sure?  Try again.");
+		}
 	}
 	
 	public String getSelected() {
-		return null;
-	}
+		return Impressive.isSelected() ? "Impressive" : "Yes";
+	}	
 }
