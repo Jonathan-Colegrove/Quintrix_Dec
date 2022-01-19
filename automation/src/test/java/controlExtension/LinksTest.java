@@ -1,29 +1,19 @@
 package controlExtension;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.AfterTest;
+import January5.TestBase;
 
-public class LinksTest {
-  @BeforeTest
-  public void beforeTest() {
-  }
-
-  @AfterTest
-  public void afterTest() {
-  }
-
+public class LinksTest extends TestBase {
 
   @Test
-  public void clickTest() {
-    throw new RuntimeException("Test not implemented");
+  public void canClickHome() {
 	// Arrange
-	  
-	  
+    Links link = new Links(super.getDriver());
+
 	// Act
-	
+	link.click("simpleLink");
 	  
 	// Assert
-
+//	Assert.assertTrue(link.click("simpleLink"));
   }
 }

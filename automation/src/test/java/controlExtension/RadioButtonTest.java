@@ -48,5 +48,4 @@ public class RadioButtonTest extends TestBase {
 		// Assert
 		Assert.assertNotEquals(expectedResult, "No");
 	}
-	
 }
