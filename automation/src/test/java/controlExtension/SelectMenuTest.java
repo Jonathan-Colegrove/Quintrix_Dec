@@ -15,7 +15,6 @@ public class SelectMenuTest {
 
   @Test
   public void getValueTest() {
-    throw new RuntimeException("Test not implemented");
 	// Arrange
 	  
 	  
@@ -28,7 +27,6 @@ public class SelectMenuTest {
 
   @Test
   public void setValueTest() {
-    throw new RuntimeException("Test not implemented");
 	// Arrange
 	  
 	  
