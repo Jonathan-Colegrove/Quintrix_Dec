@@ -23,10 +23,10 @@ private final String URL = "https://demoqa.com/slider";
 	WebElement SliderBar = driver.findElement(By.xpath("//*[@id=\\\"sliderContainer\\\"]/div[1]/span/input"));
 
 	public void setValue(String value) {
-		
+		SliderBar.sendKeys(value);
 	}
 	
 	public String getValue() {
-		return null;
+		return SliderBar.getText();
 	}
 }
