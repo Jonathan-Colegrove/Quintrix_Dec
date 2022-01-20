@@ -1,33 +1,42 @@
 package controlExtension;
 
-import java.sql.Array;
+import java.util.ArrayList;
+import java.util.List;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import framework.PageObjectBase;
 
-public class SelectMenu {
-	private final String URL = "https://demoqa.com/select-menu";
+public class SelectMenu extends PageObjectBase {
 	
+	protected SelectMenu(WebDriver driver) {
+		super(driver);
+	}
+
+	private final String URL = "https://demoqa.com/select-menu";
+
 	@FindBy(how = How.ID, using = "oldSelectMenu")
 	private WebElement dropDown;
-	
+
 	public void setValue(String value) {
 		dropDown.sendKeys(value);
 	}
-	
-	public String getValue() {
-		return dropDown.getText();
-		
-	}
-	
-	public String[] getOptions() {
-//		Array options[];
-//		for (int i = 0; i < dropDown.getSize(); i++) {
-//
-//		}
-//		
-		return null;
+
+	public void navigate() {
+		driver.navigate().to(URL);
 	}
 
+	public String getValue() {
+		return dropDown.getText();
+	}
+	
+	public List<String> getOptions() {
+		List<String> options = new ArrayList<String>();
+		for (int i = 0; i < dropDown.getSize().width; i++) {
+			options.add(dropDown.getText());
+		}
+		return options;
+	}
 }
