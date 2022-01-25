@@ -47,6 +47,10 @@ public class ApiTests  extends TestBase {
 
 		//Assert
 
+//		when().
+//			delete("/api/users/2");
+//		then().
+//			statusCode(204);
 	}
 
 	@Test
