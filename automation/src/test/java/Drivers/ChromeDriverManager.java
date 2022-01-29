@@ -2,10 +2,8 @@ package Drivers;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-public class ChromeDriverManager {
+public class ChromeDriverManager extends DriverManager {
 	public void createDriver() {
 		Path resourceDirectory = Paths.get("src", "test", "resources");
 		String absolutePath = resourceDirectory.toFile().getAbsolutePath();
@@ -16,7 +14,7 @@ public class ChromeDriverManager {
 //		this.driver = new ChromeDriver();
 //		this.driver.manage().window().maximize();
 
-		long pageLoadTimeout = 60;
+//		long pageLoadTimeout = 60;
 //		this.driver.manage().timeouts().implicitlyWait(pageLoadTimeout, TimeUnit.SECONDS);
 	}
 }

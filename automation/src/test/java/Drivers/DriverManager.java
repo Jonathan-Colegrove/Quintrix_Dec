@@ -12,9 +12,11 @@ public abstract class DriverManager {
 		return this.driver;
 	}
 
-	protected void setDriver() {
+	protected void setDriver(WebDriver driver) {
+		this.driver = driver;
 	}
 
 	public void quitDriver() {
+		getDriver().quit();
 	}
 }
