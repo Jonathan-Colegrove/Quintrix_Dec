@@ -1,9 +1,7 @@
 import org.testng.annotations.Test;
-import org.testng.annotations.BeforeTest;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 
 public class WebDriverTest {
