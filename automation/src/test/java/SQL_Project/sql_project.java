@@ -1,5 +1,10 @@
 //package SQL_Project;
 //
+//import java.sql.*
+//DriverManager.getConnection();
+//private final String userName = "";
+//private final String password = "";
+//
 //public class sql_project {
 //	
 //	1. Get 10 cities in descending alphabetical order.
@@ -78,5 +83,4 @@
 //	DELETE FROM store
 //	WHERE store_id = 3
 //	ROLLBACK TRANSACTION;
-//
 //}
